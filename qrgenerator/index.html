@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black w-full h-[100vh] flex justify-center items-center">
+    <div class= " box bg-blue-600 p-7 w-[400px] rounded-xl">
+        <div class="qr-header ">
+            <h1 class="heading text-2xl text-center text-white mb-6 uppercase">Generate QR Code</h1>
+            <input type="text" id="qr-text" placeholder="Type your text or url" class="input w-full my-3 p-2 rounded-lg text-xl outline-none border-2 border-blue-100">
+            <div class="flex justify-between"><label for="sizes" class="text-white text-xl">Select sizes</label>
+                <select  id="sizes" class="p-2 rounded-lg text-[18px] outline-none border-2 border-blue-100">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                    <option value="600">600x600</option>
+                    <option value="700">700x700</option>
+                    <option value="800">800x800</option>
+                    <option value="900">900x900</option>
+                    <option value="1000">1000x1000</option>
+                </select>
+            </div>
+        </div>
+     <div class="qr-body grid place-items-center p-5  m-4"></div>
+     <div class="qr-footer mt-7 flex justify-center">
+        <a href="" id="gntbtn" class="bg-white decoration-0 text-2xl  px-8 py-4 mx-0.5 text-blue-500 font-bold rounded-lg">Generate</a>
+        <a href="" id="dwdbtn" class="bg-white decoration-0 text-2xl  px-8 py-4 mx-0.5 text-blue-500 font-bold rounded-lg"> Download</a>
+     </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
